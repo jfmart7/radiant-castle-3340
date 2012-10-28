@@ -6,6 +6,6 @@
 	<link href="client/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<p>TEST</p>
+<p style="color: yellow;">TEST</p>
 </body>
 </html>
