@@ -77,7 +77,7 @@
 </head>
 <body ontouchmove="BlockMove(event);">
 <p>update workeddddd!</p><br/>
-  <div id="fb-root"></div>
+ <!-- <div id="fb-root"></div>
   <script src="//connect.facebook.net/en_US/all.js"></script>
 
   <div id="stage">
@@ -103,7 +103,7 @@
     FB.getLoginStatus(function(response) {
       uid = response.authResponse.userID ? response.authResponse.userID : null;
     });
-  </script>
+  </script> -->
 
 </body>
 </html>
