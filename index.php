@@ -25,7 +25,7 @@
 
   $app_id = 'APP_ID';
   $app_secret = 'APP_SECRET';
-  $app_namespace = 'criticalmasscomplete';
+  $app_namespace = 'test_jfm_dev';
   $app_url = 'http://apps.facebook.com/' . $app_namespace . '/';
   $scope = 'email,publish_actions';
 
