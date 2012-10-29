@@ -123,7 +123,11 @@
     function getUpdate() {
 	htmls += '<p>in getUpdate</p><br>';
     FB.api('/13749274/friends', function(response) {
-		htmls += '<p style="color=yellow;">' + response.data.length + ' friends.</p><br>';
+		if(response.data) {
+		htmls += '<p>' + response.data.length + ' friends.</p><br>';
+		} else {
+		htmls += '<p>you have no friends</p><br>';
+		}
 		//$('#user-info').show();
 		//$('#user-info').html(htmls);
    });};
