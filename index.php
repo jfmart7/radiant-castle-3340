@@ -85,7 +85,7 @@
       <canvas id="myCanvas"></canvas>
     </div>
   </div>-->
-
+<div id="user-info" style="display: none;background=green;"></div>
   <!--<script src="client/core.js"></script>
   <script src="client/game.js"></script>
   <script src="client/ui.js"></script>
@@ -109,12 +109,14 @@
     });
 
     function writeRandom(msg) {
-		document.write('<p style="color=yellow;">' + msg + ' friends.</p><br>');
+		document.write('<p style="color=yellow;">' + msg + '</p><br>');
     };
 
     function getUpdate() {
     FB.api('/me/friends', function(response) {
-		document.write('<p style="color=yellow;">' + response.data.length + ' friends.</p><br>');
+		var htmls = '<p style="color=yellow;">' + response.data.length + ' friends.</p><br>';
+		$('#user-info').show();
+		$('#user-info').html(htmls);
    });};
   </script> 
 
