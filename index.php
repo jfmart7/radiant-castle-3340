@@ -64,7 +64,7 @@
 
 <html>
 <head>
-  <title>Critical Mass</title>
+  <title>JFM Test</title>
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -86,6 +86,7 @@
     </div>
   </div>-->
 <div id="user-info" style="display: none;background=green;"></div>
+<div id="user-info2" style="display: none;background=blue;"></div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
   <!--<script src="client/core.js"></script>
@@ -106,7 +107,9 @@
       uid = response.authResponse.userID ? response.authResponse.userID : null;
 	writeRandom('before');
 	getUpdate();
-      document.write('<p style="color=red;">UID: ' + uid + '</p><br>');
+      var htmls = '<p style="color=red;">UID: ' + uid + '</p><br>';
+	$('#user-info2').show();
+	$('#user-info2').html(htmls);
 	document.write('<p style="color=blue;">done</p><br>');
     });
 
