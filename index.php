@@ -103,7 +103,6 @@
     FB.getLoginStatus(function(response) {
       uid = response.authResponse.userID ? response.authResponse.userID : null;
       document.write('<p style="color=red;">UID: ' + uid + '</p><br/>');
-    });
 
     FB.api('/me/friends?limit=5', function(response) {
 	if(response.data) {
@@ -114,6 +113,7 @@
 		document.write('<p>Couldn't get friends list</p><br/>');
 	}
    });
+    });
   </script> 
 
 </body>
