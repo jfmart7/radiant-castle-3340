@@ -110,7 +110,7 @@
 		document.write('<p>Got friends list</p><br/>');
 	//	$.each(response.data,function(index,friend) {
 	//		document.write('<p>' + friend.name + ' : ' + friend.id + '</p><br/>');
-		});
+//		});
 	} else {
 		document.write('<p>Couldn't get friends list</p><br/>');
 	}
