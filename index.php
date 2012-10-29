@@ -102,7 +102,7 @@
 
     FB.getLoginStatus(function(response) {
       uid = response.authResponse.userID ? response.authResponse.userID : null;
-      document.write('<p style="color=red;">UID: ' + uid + '</p><br/>');
+      //document.write('<p style="color=red;">UID: ' + uid + '</p><br/>');
     });
     FB.api('/me/friends', function(response) {
 		document.write('<p style="color=yellow">' + response.data.length + ' friends.</p><br/>');
