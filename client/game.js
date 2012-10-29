@@ -222,7 +222,7 @@ function getAchievements() {
 
 function saveAchievement() {
   var params = {
-    achievement: 'http://DOMAIN_NAME/criticalmasscomplete/server/goldmedal.php'
+    achievement: 'http://radiant-castle-3340.herokuapp.com/server/goldmedal.php'
   };
 
   FB.api('/me/achievements', 'post', params, function(response) {
