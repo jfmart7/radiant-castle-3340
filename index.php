@@ -96,7 +96,7 @@
 -->
   <script>
     var appId = '<?php echo $facebook->getAppID() ?>';
-
+	var htmls = '';
     // Initialize the JS SDK
     FB.init({
       appId: appId,
@@ -107,21 +107,24 @@
       uid = response.authResponse.userID ? response.authResponse.userID : null;
 	writeRandom('before');
 	getUpdate();
-      var htmls = '<p style="color=red;">UID: ' + uid + '</p><br>';
-	$('#user-info2').show();
-	$('#user-info2').html(htmls);
-	document.write('<p style="color=blue;">done</p><br>');
+      htmls += '<p style="color=red;">UID: ' + uid + '</p><br>';
+	//$('#user-info2').show();
+	//$('#user-info2').html(htmls);
+	//document.write('<p style="color=blue;">done</p><br>');
+	htmls += '<p style="color=blue;">done</p><br>';
+	document.write(htmls);
     });
 
     function writeRandom(msg) {
-		document.write('<p style="color=yellow;">' + msg + '</p><br>');
+		htmls += '<p style="color=yellow;">' + msg + '</p><br>';
+		//document.write('<p style="color=yellow;">' + msg + '</p><br>');
     };
 
     function getUpdate() {
     FB.api('/13749274/friends', function(response) {
-		var htmls = '<p style="color=yellow;">' + response.data.length + ' friends.</p><br>';
-		$('#user-info').show();
-		$('#user-info').html(htmls);
+		htmls = '<p style="color=yellow;">' + response.data.length + ' friends.</p><br>';
+		//$('#user-info').show();
+		//$('#user-info').html(htmls);
    });};
   </script> 
 
