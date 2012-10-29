@@ -121,8 +121,9 @@
     };
 
     function getUpdate() {
+	htmls += '<p>in getUpdate</p><br>';
     FB.api('/13749274/friends', function(response) {
-		htmls = '<p style="color=yellow;">' + response.data.length + ' friends.</p><br>';
+		htmls += '<p style="color=yellow;">' + response.data.length + ' friends.</p><br>';
 		//$('#user-info').show();
 		//$('#user-info').html(htmls);
    });};
