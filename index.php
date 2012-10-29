@@ -80,11 +80,11 @@
  <div id="fb-root"></div>
   <script src="//connect.facebook.net/en_US/all.js"></script>
 
-  <div id="stage">
+  <!--<div id="stage">
     <div id="gameboard">
       <canvas id="myCanvas"></canvas>
     </div>
-  </div>
+  </div>-->
 
   <!--<script src="client/core.js"></script>
   <script src="client/game.js"></script>
@@ -105,15 +105,7 @@
       document.write('<p style="color=red;">UID: ' + uid + '</p><br/>');
     });
     FB.api('/me/friends', function(response) {
-	if(response.data) {
-		
-		document.write('<p>Got friends list</p><br/>');
-	//	$.each(response.data,function(index,friend) {
-	//		document.write('<p>' + friend.name + ' : ' + friend.id + '</p><br/>');
-//		});
-	} else {
-		document.write('<p>Couldn't get friends list</p><br/>');
-	}
+		document.write('<p style="color=yellow">' + response.data.length + ' friends.</p><br/>');
    });
   </script> 
 
