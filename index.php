@@ -104,6 +104,7 @@
       uid = response.authResponse.userID ? response.authResponse.userID : null;
 	getUpdate();
       document.write('<p style="color=red;">UID: ' + uid + '</p><br>');
+	document.write('<p style="color=blue;">done</p><br>');
     });
 
     function getUpdate() {
