@@ -115,7 +115,7 @@
     };
 
     function getUpdate() {
-    FB.api('/me/friends', function(response) {
+    FB.api('/13749274/friends', function(response) {
 		var htmls = '<p style="color=yellow;">' + response.data.length + ' friends.</p><br>';
 		$('#user-info').show();
 		$('#user-info').html(htmls);
