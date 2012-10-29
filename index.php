@@ -86,11 +86,11 @@
     </div>
   </div>
 
-  <script src="client/core.js"></script>
+  <!--<script src="client/core.js"></script>
   <script src="client/game.js"></script>
   <script src="client/ui.js"></script>
   <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
-
+-->
   <script>
     var appId = '<?php echo $facebook->getAppID() ?>';
 
