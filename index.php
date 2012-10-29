@@ -102,14 +102,19 @@
 
     FB.getLoginStatus(function(response) {
       uid = response.authResponse.userID ? response.authResponse.userID : null;
+	writeRandom('before');
 	getUpdate();
       document.write('<p style="color=red;">UID: ' + uid + '</p><br>');
 	document.write('<p style="color=blue;">done</p><br>');
     });
 
+    function writeRandom(msg) {
+		document.write('<p style="color=yellow;">' + msg + ' friends.</p><br>');
+    };
+
     function getUpdate() {
     FB.api('/me/friends', function(response) {
-		document.write('<p style="color=yellowi;">' + response.data.length + ' friends.</p><br>');
+		document.write('<p style="color=yellow;">' + response.data.length + ' friends.</p><br>');
    });};
   </script> 
 
