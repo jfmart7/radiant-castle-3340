@@ -86,6 +86,8 @@
     </div>
   </div>-->
 <div id="user-info" style="display: none;background=green;"></div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
   <!--<script src="client/core.js"></script>
   <script src="client/game.js"></script>
   <script src="client/ui.js"></script>
